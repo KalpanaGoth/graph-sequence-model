@@ -14,7 +14,10 @@ This project implements a graph-based approach to sequence processing using dyna
 ```
 graph_sequence_model/
 │
+├── architecture/            # Architecture of the application and graph-based-model 
+│
 ├── data/
+│
 │   ├── load_data.py         # Script for loading and preprocessing datasets
 │   ├── preprocess.py        # Functions for tokenization, normalization, etc.
 │   └── sample_datasets/     # Sample datasets for quick testing
@@ -52,6 +55,10 @@ graph_sequence_model/
 │   ├── test_data.py         # Tests for data loading and preprocessing
 │   ├── test_training.py     # Tests for training and optimizer configurations
 │   └── test_integration.py  # End-to-end integration tests
+│
+├── experamental_results/    # Show output from experaments 
+│
+├── sample_datasets/         # Sampe datasets used 
 │
 ├── README.md                # Detailed setup and usage instructions
 ├── requirements.txt         # List of dependencies and libraries
