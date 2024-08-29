@@ -11,7 +11,7 @@ To facilitate easy implementation, the project is organized into a modular struc
 This project implements a graph-based approach to sequence processing using dynamic graph learning, edge weight computation, and message passing mechanisms. It includes components for model training, evaluation, visualization, and utility functions for handling data and configurations.
 
 ## Project Structure
-'code'
+```
 graph_sequence_model/
 │
 ├── data/
@@ -56,7 +56,7 @@ graph_sequence_model/
 ├── README.md                # Detailed setup and usage instructions
 ├── requirements.txt         # List of dependencies and libraries
 └── run_experiments.py       # Script to run experiments based on configs
-
+```
 
 ## Setup Instructions
 
