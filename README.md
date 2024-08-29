@@ -1,5 +1,5 @@
 # graph-sequence-model
-This repo supports fundamental research in AI and ML transformers and proposes a novel alternatives to long distence sequencing over Self Attention. Read the white-paper here. 
+Graph-Based Model for Sequence Processing
 
 # Read the white paper here
 https://docs.google.com/document/d/1kwkqyTzQABSKXEE3eqiq_XfNbbOJ3Z14/edit?usp=sharing&ouid=105341059173204849977&rtpof=true&sd=true
@@ -11,7 +11,7 @@ To facilitate easy implementation, the project is organized into a modular struc
 This project implements a graph-based approach to sequence processing using dynamic graph learning, edge weight computation, and message passing mechanisms. It includes components for model training, evaluation, visualization, and utility functions for handling data and configurations.
 
 ## Project Structure
-
+'code'
 graph_sequence_model/
 │
 ├── data/
