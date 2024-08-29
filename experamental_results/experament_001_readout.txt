@@ -24,5 +24,5 @@ Stable Performance: A stable loss value (~0.284) during both training and evalua
 Warning About Shape Mismatch: The warning suggests that the model's output and the target it’s trying to match might have different dimensions. While this didn't stop the process, aligning these shapes could potentially improve results and avoid unintended errors.
 
 What Experament is Next?
-Experiment with Hyperparameters: To improve the model's performance further, consider experimenting with different hyperparameters, such as the learning rate, model complexity, or training epochs.
-Analyze Further: Look into other evaluation metrics (such as accuracy, precision, recall, or F1 score) if your task is more classification-focused to get a comprehensive view of model performance.
+Experiment with Hyperparameters: To improve the model's performance further, we are considering experimenting with different hyperparameters, such as the learning rate, model complexity, or training epochs.
+Analyze Further: We are looking into other evaluation metrics (such as accuracy, precision, recall, or F1 score) if the task is more classification-focused to get a comprehensive view of model performance.
