@@ -1,0 +1,14 @@
+digraph "Graph-Based Sequence Processing Architecture" {
+	node [color=black fontcolor=white shape=box style=filled]
+	data [label="Input Sequence Data"]
+	embedding [label="Embedding Layer"]
+	"graph" [label="Graph Representation"]
+	edge_weight [label="Edge Weight Calculation"]
+	message_passing [label="Message Passing"]
+	output [label="Final Output"]
+	data -> embedding
+	embedding -> "graph"
+	"graph" -> edge_weight
+	edge_weight -> message_passing
+	message_passing -> output
+}

@@ -1,0 +1,5 @@
+The quick brown fox jumps over the lazy dog.
+Machine learning is revolutionizing the world of AI.
+Graph-based models provide flexibility and interpretability.
+Data preprocessing is essential for high-quality input data.
+Python and natural language processing go hand in hand.

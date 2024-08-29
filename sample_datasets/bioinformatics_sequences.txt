@@ -1,0 +1,5 @@
+DNA sequences are composed of nucleotides represented by A, T, C, and G.
+Protein structures are determined by amino acid sequences.
+Bioinformatics leverages data analysis for understanding biological processes.
+Genetic mutations can lead to significant changes in protein function.
+Machine learning models help in predicting protein folding.

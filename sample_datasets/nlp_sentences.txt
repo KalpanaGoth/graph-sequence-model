@@ -1,0 +1,5 @@
+Natural language processing is a subfield of artificial intelligence.
+Text data can be complex and unstructured.
+Tokenization splits text into individual words or tokens.
+Stopwords are common words that add little value to analysis.
+Machine translation involves converting text from one language to another.

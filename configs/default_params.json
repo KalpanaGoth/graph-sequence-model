@@ -1,0 +1,27 @@
+{
+    "nlp": {
+      "input_dim": 768,
+      "hidden_dim": 256,
+      "output_dim": 2,
+      "learning_rate": 0.0005,
+      "batch_size": 16,
+      "num_epochs": 50
+    },
+    "time_series": {
+      "input_dim": 32,
+      "hidden_dim": 64,
+      "output_dim": 1,
+      "learning_rate": 0.001,
+      "batch_size": 32,
+      "num_epochs": 100
+    },
+    "bioinformatics": {
+      "input_dim": 128,
+      "hidden_dim": 128,
+      "output_dim": 10,
+      "learning_rate": 0.001,
+      "batch_size": 64,
+      "num_epochs": 75
+    }
+  }
+  

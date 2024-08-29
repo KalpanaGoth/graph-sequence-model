@@ -1,0 +1,13 @@
+digraph "Graph-Based Flow" {
+	node [color=black fontcolor=white shape=ellipse style=filled]
+	I [label="I [0.1, 0.2, 0.3]"]
+	love [label="love [0.4, 0.5, 0.6]"]
+	machine [label="machine [0.7, 0.8, 0.9]"]
+	learning [label="learning [1.0, 1.1, 1.2]"]
+	I -> love [label="w_{1,2}"]
+	love -> machine [label="w_{2,3}"]
+	machine -> learning [label="w_{3,4}"]
+	I -> learning [label="w_{1,4}"]
+	love -> learning [label="w_{2,4}"]
+	I -> machine [label="w_{1,3}"]
+}
