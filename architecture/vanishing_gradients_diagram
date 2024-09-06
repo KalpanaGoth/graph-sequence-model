@@ -1,0 +1,36 @@
+digraph "Vanishing Gradients in RNN/LSTM" {
+	node [color=lightblue fontcolor=black shape=circle style=filled]
+	Input0 [label="Input 0"]
+	Input1 [label="Input 1"]
+	Input2 [label="Input 2"]
+	Input3 [label="Input 3"]
+	InputN [label="Input N"]
+	Hidden0 [label=H0 color=lightcoral]
+	Hidden1 [label=H1 color=lightcoral]
+	Hidden2 [label=H2 color=lightcoral]
+	Hidden3 [label=H3 color=lightcoral]
+	HiddenN [label=HN color=lightcoral]
+	Output0 [label="Output 0"]
+	Output1 [label="Output 1"]
+	Output2 [label="Output 2"]
+	Output3 [label="Output 3"]
+	OutputN [label="Output N"]
+	Input0 -> Hidden0
+	Input1 -> Hidden1
+	Input2 -> Hidden2
+	Input3 -> Hidden3
+	InputN -> HiddenN
+	Hidden0 -> Hidden1
+	Hidden1 -> Hidden2
+	Hidden2 -> Hidden3
+	Hidden3 -> HiddenN
+	Hidden0 -> Output0
+	Hidden1 -> Output1
+	Hidden2 -> Output2
+	Hidden3 -> Output3
+	HiddenN -> OutputN
+	HiddenN -> Hidden3 [label="Diminishing Gradient" color=red style=dashed]
+	Hidden3 -> Hidden2 [color=red style=dashed]
+	Hidden2 -> Hidden1 [color=red style=dashed]
+	Hidden1 -> Hidden0 [color=red style=dashed]
+}

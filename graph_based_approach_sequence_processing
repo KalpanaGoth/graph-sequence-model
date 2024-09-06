@@ -1,0 +1,21 @@
+digraph "Graph-Based Approach to Sequence Processing" {
+	node [color=lightblue fontcolor=black shape=circle style=filled]
+	fontname="Helvetica-Oblique" fontsize=12 rankdir=LR ranksep=1.0 size="8,5" splines=true
+	Node1 [label=Node1]
+	Node2 [label=Node2]
+	Node3 [label=Node3]
+	Node4 [label=Node4]
+	Node5 [label=Node5]
+	Node1 -> Node2 [label=learnable color=black]
+	Node1 -> Node3 [label=learnable color=black style=dashed]
+	Node1 -> Node4 [label=learnable color=black style=dotted]
+	Node2 -> Node4 [label=learnable color=black]
+	Node2 -> Node5 [label=learnable color=black style=dashed]
+	Node3 -> Node5 [label=learnable color=black]
+	Node4 -> Node5 [label=learnable color=black style=dotted]
+	node [shape=plaintext]
+	label1 [label="Graph-Based Approach to Sequence Processing" fontcolor=black fontsize=12]
+	label2 [label="Nodes = Sequence Elements, Edges = Learnable Relationships" fontcolor=black fontsize=10]
+	label1 -> Node1 [style=invis]
+	label2 -> Node2 [style=invis]
+}

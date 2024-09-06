@@ -1,0 +1,64 @@
+digraph "Neural Network Architecture" {
+	node [shape=circle style=filled]
+	fontname="Helvetica-Oblique" fontsize=12 rankdir=LR ranksep=1.4 size="7.75,10.25" splines=false
+	node [color=chartreuse fillcolor=chartreuse]
+	x1 [label=<x1>]
+	x2 [label=<x2>]
+	node [color=dodgerblue fillcolor=dodgerblue]
+	a12 [label=<a<sub>1</sub><sup>(2)</sup>>]
+	a22 [label=<a<sub>2</sub><sup>(2)</sup>>]
+	a32 [label=<a<sub>3</sub><sup>(2)</sup>>]
+	a42 [label=<a<sub>4</sub><sup>(2)</sup>>]
+	a52 [label=<a<sub>5</sub><sup>(2)</sup>>]
+	a13 [label=<a<sub>1</sub><sup>(3)</sup>>]
+	a23 [label=<a<sub>2</sub><sup>(3)</sup>>]
+	a33 [label=<a<sub>3</sub><sup>(3)</sup>>]
+	a43 [label=<a<sub>4</sub><sup>(3)</sup>>]
+	a53 [label=<a<sub>5</sub><sup>(3)</sup>>]
+	node [color=coral1 fillcolor=coral1]
+	O1 [label=<y1>]
+	O2 [label=<y2>]
+	O3 [label=<y3>]
+	node [shape=plaintext]
+	l0 [label="layer 1 (input layer)"]
+	l1 [label="layer 2 (hidden layer)"]
+	l2 [label="layer 3 (hidden layer)"]
+	l3 [label="layer 4 (output layer)"]
+	l0 -> x1
+	l1 -> a12
+	l2 -> a13
+	l3 -> O1
+	rank=same
+	x1 -> x2
+	a12 -> a22
+	a22 -> a32
+	a32 -> a42
+	a42 -> a52
+	a13 -> a23
+	a23 -> a33
+	a33 -> a43
+	a43 -> a53
+	O1 -> O2
+	O2 -> O3
+	edge [headport=w style=solid tailport=e]
+	x1 -> a12
+	x1 -> a22
+	x1 -> a32
+	x1 -> a42
+	x1 -> a52
+	x2 -> a12
+	x2 -> a22
+	x2 -> a32
+	x2 -> a42
+	x2 -> a52
+	a12 -> a13
+	a22 -> a23
+	a32 -> a33
+	a42 -> a43
+	a52 -> a53
+	a13 -> O1
+	a23 -> O2
+	a33 -> O3
+	a43 -> O1
+	a53 -> O2
+}

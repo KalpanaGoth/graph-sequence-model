@@ -1,0 +1,34 @@
+digraph "Pairwise Querying in Self-Attention" {
+	node [color=lightblue fontcolor=black shape=circle style=filled]
+	fontname="Helvetica-Oblique" fontsize=12 rankdir=TB ranksep=1.0 size="5,5" splines=true
+	A [label=A]
+	B [label=B]
+	C [label=C]
+	D [label=D]
+	E [label=E]
+	A -> B
+	A -> C
+	A -> D
+	A -> E
+	B -> A
+	B -> C
+	B -> D
+	B -> E
+	C -> A
+	C -> B
+	C -> D
+	C -> E
+	D -> A
+	D -> B
+	D -> C
+	D -> E
+	E -> A
+	E -> B
+	E -> C
+	E -> D
+	node [shape=plaintext]
+	label1 [label="Pairwise Querying in Self-Attention" fontcolor=black fontsize=14]
+	label2 [label="Each element queries every other element" fontcolor=black fontsize=10]
+	label1 -> A [style=invis]
+	label2 -> B [style=invis]
+}
