@@ -73,8 +73,48 @@ graph_sequence_model/
 
 ### Install Dependencies
 To install the required packages, run:
-```bash
-pip install -r requirements.txt
+Install dependencies using:
+
+- pip install -r requirements.txt
+
+### Setting Up and Running the Model
+To run the model, follow these steps:
+1. Data Preprocessing: Preprocess datasets using data/load_data.py. For custom datasets, ensure they are properly tokenized and normalized.
+2. Configure Experiments: Set up hyperparameters and paths in configs/config.yaml. The configuration can be easily modified for different tasks.
+3. Training the Model: Run the training script:
+
+1. Data Preprocessing: Preprocess datasets using ‘data/load_data.py’. For custom datasets, ensure they are properly tokenized and normalized.
+
+2. Configure Experiments: Set up hyperparameters and paths in ‘configs/config.yaml’. The configuration can be easily modified for different tasks.
+
+3. Training the Model: Run the training script:
+
+The training script automatically handles checkpointing, early stopping, and logging.
+
+4. Evaluation and Visualization: Use ‘evaluate/evaluate.py’ to compute metrics like BLEU or accuracy:
+   ```bash
+
+   Visualizations of learned graph structures and attention can be generated using:
+   ```bash
+C.4 Testing and Tuning
+Unit Testing: Run unit tests using ‘pytest’:
+
+The tests cover key components like graph layers, data loading, and training loops.
+
+Hyperparameter Tuning: Use grid search or random search for hyperparameter tuning. You can define parameter grids in ‘configs/default_params.json’ and run tuning experiments:
+
+Integration Testing: End-to-end tests are included in ‘tests/test_integration.py’ to ensure the entire pipeline works smoothly.
+
+## Libraries and Dependencies
+The implementation leverages the following key Python libraries:
+- **PyTorch**: Core deep learning library for model building and training.
+- **PyTorch Geometric**: Provides utilities for working with graph-based models, such as graph layers, pooling, and message passing functions.
+- **NetworkX**: Used for graph visualization and analysis.
+- **Scikit-learn**: Provides utilities for preprocessing, evaluation metrics, and data handling.
+- **Matplotlib/Seaborn**: For plotting attention distributions, graph structures, and performance metrics.
+- **Hydra/ConfigArgParse**: For managing configurations and hyperparameter tuning via YAML/JSON.
+
+Add the following dependencies to `requirements.txt`:
 
 ### Running the Model
 Configure the settings: Edit configs/config.yaml to set your desired parameters and paths.
