@@ -35,3 +35,27 @@ Create a graph model using a Graph-Based Approach to perform English to Spanish 
 8. **Analysis**
    - Analyze graph structure's impact on translation context.
    - Identify areas for improvement in edge weights and message-passing.
+
+
+## Experiment and Training Planned.
+
+### 1. Hyperparameter Tuning
+Implement grid search or random search to optimize hyperparameters in our graph-based models, focusing on edge weights, embedding dimensions, and walk lengths.
+
+### 2. Model Comparison
+Conduct experiments comparing our graph-based approach against traditional translation models (e.g., RNN, Transformer) using the same datasets.
+
+### 3. Scalability Testing
+Test the model on larger datasets to evaluate how it scales in terms of memory usage and computation time.
+
+### 4. Domain-Specific Fine-Tuning
+Train and evaluate the model on domain-specific data (e.g., medical or legal texts) to test adaptability and performance variations.
+
+### 5. Visualization of Learning Process
+Implement dynamic visualizations to track the evolution of node embeddings and graph structure during training.
+
+### 6. Robustness to Noisy Data
+Experiment with noisy or incomplete data to test the model's robustness and error-handling capabilities.
+
+### 7. Multi-lingual Capabilities
+Extend the experiments to include multiple languages beyond English-Spanish pairs to evaluate the generalizability of the approach.
