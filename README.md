@@ -58,6 +58,18 @@ graph_sequence_model/
 │
 ├── experamental_results/    # Show output from experaments 
 │
+├── /experiments
+│   ├── /step_1_build_graph.py            # Step 1: Build translation graph
+│   ├── /step_2_add_weights.py            # Step 2: Add frequency-based weights
+│   ├── /step_3_integrate_book.py         # Step 3: Integrate book to graph
+│   ├── /step_4_initialize_embeddings.py  # Step 4: Initialize node embeddings
+│   ├── /step_5_message_passing.py        # Step 5: Message passing and propagation
+│   ├── /step_6_translation.py            # Step 6: Translate phrases using graph
+│   ├── /step_7_evaluation.py             # Step 7: Evaluate model performance
+│   └── /step_8_analysis.py               # Step 8: Analyze graph structure
+│
+├── /notebooks           # For Jupyter notebooks for interactive testing
+│
 ├── sample_datasets/         # Sampe datasets used 
 │
 ├── README.md                # Detailed setup and usage instructions
